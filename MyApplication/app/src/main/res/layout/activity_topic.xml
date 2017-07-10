@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_topic"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.TopicActivity"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingRight="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/section_title_bg"
+        android:id="@+id/title_liner">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:padding="3dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitStart"
+            android:src="@drawable/point_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/title"
+            android:text="Most Read"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="15dp"
+            android:clickable="true"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="70dp"
+        android:id="@+id/topic_list"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:nestedScrollingEnabled="true"
+        android:layout_height="match_parent"
+        android:visibility="visible"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="لا توجد نتائج"
+        android:gravity="center"
+        android:id="@+id/no_res"
+        android:visibility="gone"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.SearchResult.Title"/>
+
+</RelativeLayout>

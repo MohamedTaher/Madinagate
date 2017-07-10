@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/file_layout_id"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="3dp"
+        card_view:cardUseCompatPadding="true">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/texture_resized"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="الله ورسوله أعلم الله ورسوله أعلم"
+                android:textStyle="bold"
+                android:lines="3"
+                android:id="@+id/title"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:shadowColor="@color/black"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="4"/>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_topic"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.TopicActivity"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="60dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@drawable/section_title_bg"
+            android:id="@+id/title_liner">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:padding="3dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="50dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/point_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:id="@+id/title"
+                android:text="العقيدة و الفلسفة و التصوف الإسلامي"
+                android:lines="2"
+                android:textStyle="bold"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="25dp"
+                android:clickable="true"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="60dp"
+        android:id="@+id/topic_list"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:nestedScrollingEnabled="true"
+        android:layout_height="match_parent"
+        android:visibility="visible"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="لا توجد نتائج"
+        android:gravity="center"
+        android:id="@+id/no_res"
+        android:visibility="invisible"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.SearchResult.Title"/>
+
+
+</RelativeLayout>

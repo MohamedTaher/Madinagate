@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/menu_content"
+            android:clickable="true">
+
+            <include
+                layout="@layout/nav_header_home"
+                android:layout_width="match_parent"
+                android:layout_height="82dp" />
+
+            <ExpandableListView
+                android:id="@+id/menu_expand"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                />
+
+            <TextView
+                android:layout_marginTop="1dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:paddingEnd="12dp"
+                android:paddingStart="12dp"
+                android:id="@+id/about"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:text="اعرف عنا"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_marginTop="1dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:paddingEnd="12dp"
+                android:paddingStart="12dp"
+                android:id="@+id/connect"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:text="تواصل معنا"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

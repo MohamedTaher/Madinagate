@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Madina Gate</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="settings">Settings</string>
+    <string name="search">Search</string>
+    <string name="language">Language</string>
+
+    <string-array name="languages">
+        <item>عربي</item>
+        <item>Indonesian</item>
+        <item>English</item>
+        <item>اردو</item>
+    </string-array>
+
+    <string-array name="related">
+        <item>أقرا ايضا</item>
+        <item>Baca juga</item>
+        <item>Related Posts</item>
+        <item>یہ بھی پڑھیں</item>
+    </string-array>
+
+    <string-array name="no_result">
+        <item>لا توجدنتائج</item>
+        <item>Tidak ada hasil</item>
+        <item>No Result</item>
+        <item>کو ئی نتیجہ</item>
+    </string-array>
+
+    <string-array name="about_us">
+        <item>اعرف عنا</item>
+        <item>Tentang kami</item>
+        <item>About Us</item>
+        <item>ہمارے متعلقہ</item>
+    </string-array>
+
+    <string-array name="contact_us">
+        <item>تواصل معنا</item>
+        <item>Hubungi kami</item>
+        <item>Contact us</item>
+        <item>ہم سے رابطہ کریں</item>
+    </string-array>
+
+    <string-array name="noRes">
+        <item>لا توجد نتائج</item>
+        <item>tidak ada hasil</item>
+        <item>no result</item>
+        <item>کو ئی نتیجہ</item>
+    </string-array>
+
+    <string-array name="languages_code">
+        <item>ar</item>
+        <item>en-us</item>
+        <item>en-us</item>
+        <item>ar</item>
+    </string-array>
+
+
+    <!--shared pref keys -->
+    <string name="languages_file_key">LANGUAGES_FILE_KEY</string>
+    <string name="languages_key">LANGUAGES_KEY</string>
+
+</resources>
